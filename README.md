@@ -1,4 +1,4 @@
-# ios-decal-proj4
+# Drunkosophy
 
 # Authors
 
