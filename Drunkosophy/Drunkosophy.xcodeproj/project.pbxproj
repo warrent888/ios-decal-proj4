@@ -1,0 +1,385 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8401C27A1C0D1F36008370DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8401C2791C0D1F36008370DB /* AppDelegate.swift */; };
+		8401C27C1C0D1F36008370DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8401C27B1C0D1F36008370DB /* ViewController.swift */; };
+		8401C27F1C0D1F36008370DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8401C27D1C0D1F36008370DB /* Main.storyboard */; };
+		8401C2811C0D1F36008370DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8401C2801C0D1F36008370DB /* Assets.xcassets */; };
+		8401C2841C0D1F36008370DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8401C2821C0D1F36008370DB /* LaunchScreen.storyboard */; };
+		8401C28E1C0D1FFA008370DB /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8401C28D1C0D1FFA008370DB /* Question.swift */; settings = {ASSET_TAGS = (); }; };
+		8401C2901C0D2064008370DB /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8401C28F1C0D2064008370DB /* Response.swift */; settings = {ASSET_TAGS = (); }; };
+		844B17D81C0D575500D2946F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844B17D71C0D575500D2946F /* ProfileViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		8474D6231C0D5FDA00DCECDD /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8474D6211C0D5FDA00DCECDD /* Bolts.framework */; };
+		8474D6241C0D5FDA00DCECDD /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8474D6221C0D5FDA00DCECDD /* Parse.framework */; };
+		849192321C0D613C005FA831 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 849192311C0D613C005FA831 /* AudioToolbox.framework */; };
+		849192341C0D6150005FA831 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 849192331C0D6150005FA831 /* CFNetwork.framework */; };
+		849192361C0D6155005FA831 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 849192351C0D6155005FA831 /* CoreGraphics.framework */; };
+		849192381C0D615A005FA831 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 849192371C0D615A005FA831 /* CoreLocation.framework */; };
+		8491923A1C0D615F005FA831 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 849192391C0D615F005FA831 /* QuartzCore.framework */; };
+		8491923C1C0D6164005FA831 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8491923B1C0D6164005FA831 /* Security.framework */; };
+		8491923E1C0D6169005FA831 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8491923D1C0D6169005FA831 /* StoreKit.framework */; };
+		849192401C0D616E005FA831 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8491923F1C0D616E005FA831 /* SystemConfiguration.framework */; };
+		849192421C0D6173005FA831 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 849192411C0D6173005FA831 /* libz.tbd */; };
+		849192441C0D6179005FA831 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 849192431C0D6179005FA831 /* libsqlite3.tbd */; };
+		849192461C0D6182005FA831 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 849192451C0D6182005FA831 /* Accounts.framework */; };
+		849192481C0D6186005FA831 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 849192471C0D6186005FA831 /* Social.framework */; };
+		849366D81C111E3A00CB583F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849366D71C111E3A00CB583F /* LoginViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		849366DA1C111E4300CB583F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849366D91C111E4300CB583F /* HomeViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		849366DC1C111E4F00CB583F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849366DB1C111E4F00CB583F /* SignUpViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		849366DE1C11304200CB583F /* Drunkosophy_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 849366DD1C11304200CB583F /* Drunkosophy_Logo.png */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8401C2761C0D1F36008370DB /* Drunkosophy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Drunkosophy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8401C2791C0D1F36008370DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8401C27B1C0D1F36008370DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8401C27E1C0D1F36008370DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8401C2801C0D1F36008370DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8401C2831C0D1F36008370DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8401C2851C0D1F36008370DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8401C28D1C0D1FFA008370DB /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		8401C28F1C0D2064008370DB /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		844B17D71C0D575500D2946F /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		8474D6211C0D5FDA00DCECDD /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "Drunkosophy/parse-library-1.10.0/Bolts.framework"; sourceTree = "<group>"; };
+		8474D6221C0D5FDA00DCECDD /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "Drunkosophy/parse-library-1.10.0/Parse.framework"; sourceTree = "<group>"; };
+		849192311C0D613C005FA831 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		849192331C0D6150005FA831 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		849192351C0D6155005FA831 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		849192371C0D615A005FA831 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		849192391C0D615F005FA831 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		8491923B1C0D6164005FA831 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		8491923D1C0D6169005FA831 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		8491923F1C0D616E005FA831 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		849192411C0D6173005FA831 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		849192431C0D6179005FA831 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		849192451C0D6182005FA831 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		849192471C0D6186005FA831 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		849366D71C111E3A00CB583F /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		849366D91C111E4300CB583F /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		849366DB1C111E4F00CB583F /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		849366DD1C11304200CB583F /* Drunkosophy_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Drunkosophy_Logo.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8401C2731C0D1F36008370DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				849192481C0D6186005FA831 /* Social.framework in Frameworks */,
+				849192461C0D6182005FA831 /* Accounts.framework in Frameworks */,
+				849192441C0D6179005FA831 /* libsqlite3.tbd in Frameworks */,
+				849192421C0D6173005FA831 /* libz.tbd in Frameworks */,
+				849192401C0D616E005FA831 /* SystemConfiguration.framework in Frameworks */,
+				8491923E1C0D6169005FA831 /* StoreKit.framework in Frameworks */,
+				8491923C1C0D6164005FA831 /* Security.framework in Frameworks */,
+				8491923A1C0D615F005FA831 /* QuartzCore.framework in Frameworks */,
+				849192381C0D615A005FA831 /* CoreLocation.framework in Frameworks */,
+				849192361C0D6155005FA831 /* CoreGraphics.framework in Frameworks */,
+				849192341C0D6150005FA831 /* CFNetwork.framework in Frameworks */,
+				849192321C0D613C005FA831 /* AudioToolbox.framework in Frameworks */,
+				8474D6231C0D5FDA00DCECDD /* Bolts.framework in Frameworks */,
+				8474D6241C0D5FDA00DCECDD /* Parse.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8401C26D1C0D1F36008370DB = {
+			isa = PBXGroup;
+			children = (
+				849192471C0D6186005FA831 /* Social.framework */,
+				849192451C0D6182005FA831 /* Accounts.framework */,
+				849192431C0D6179005FA831 /* libsqlite3.tbd */,
+				849192411C0D6173005FA831 /* libz.tbd */,
+				8491923F1C0D616E005FA831 /* SystemConfiguration.framework */,
+				8491923D1C0D6169005FA831 /* StoreKit.framework */,
+				8491923B1C0D6164005FA831 /* Security.framework */,
+				849192391C0D615F005FA831 /* QuartzCore.framework */,
+				849192371C0D615A005FA831 /* CoreLocation.framework */,
+				849192351C0D6155005FA831 /* CoreGraphics.framework */,
+				849192331C0D6150005FA831 /* CFNetwork.framework */,
+				849192311C0D613C005FA831 /* AudioToolbox.framework */,
+				8474D6211C0D5FDA00DCECDD /* Bolts.framework */,
+				8474D6221C0D5FDA00DCECDD /* Parse.framework */,
+				8401C2781C0D1F36008370DB /* Drunkosophy */,
+				8401C2771C0D1F36008370DB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8401C2771C0D1F36008370DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8401C2761C0D1F36008370DB /* Drunkosophy.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8401C2781C0D1F36008370DB /* Drunkosophy */ = {
+			isa = PBXGroup;
+			children = (
+				8401C2791C0D1F36008370DB /* AppDelegate.swift */,
+				8401C28D1C0D1FFA008370DB /* Question.swift */,
+				8401C28F1C0D2064008370DB /* Response.swift */,
+				8401C27B1C0D1F36008370DB /* ViewController.swift */,
+				849366D71C111E3A00CB583F /* LoginViewController.swift */,
+				849366D91C111E4300CB583F /* HomeViewController.swift */,
+				849366DB1C111E4F00CB583F /* SignUpViewController.swift */,
+				8401C27D1C0D1F36008370DB /* Main.storyboard */,
+				844B17D71C0D575500D2946F /* ProfileViewController.swift */,
+				8401C2801C0D1F36008370DB /* Assets.xcassets */,
+				8401C2821C0D1F36008370DB /* LaunchScreen.storyboard */,
+				8401C2851C0D1F36008370DB /* Info.plist */,
+				849366DD1C11304200CB583F /* Drunkosophy_Logo.png */,
+			);
+			path = Drunkosophy;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8401C2751C0D1F36008370DB /* Drunkosophy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8401C2881C0D1F36008370DB /* Build configuration list for PBXNativeTarget "Drunkosophy" */;
+			buildPhases = (
+				8401C2721C0D1F36008370DB /* Sources */,
+				8401C2731C0D1F36008370DB /* Frameworks */,
+				8401C2741C0D1F36008370DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Drunkosophy;
+			productName = Drunkosophy;
+			productReference = 8401C2761C0D1F36008370DB /* Drunkosophy.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8401C26E1C0D1F36008370DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Warren Tian and Albert Phone";
+				TargetAttributes = {
+					8401C2751C0D1F36008370DB = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = 8401C2711C0D1F36008370DB /* Build configuration list for PBXProject "Drunkosophy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8401C26D1C0D1F36008370DB;
+			productRefGroup = 8401C2771C0D1F36008370DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8401C2751C0D1F36008370DB /* Drunkosophy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8401C2741C0D1F36008370DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8401C2841C0D1F36008370DB /* LaunchScreen.storyboard in Resources */,
+				849366DE1C11304200CB583F /* Drunkosophy_Logo.png in Resources */,
+				8401C2811C0D1F36008370DB /* Assets.xcassets in Resources */,
+				8401C27F1C0D1F36008370DB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8401C2721C0D1F36008370DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				849366D81C111E3A00CB583F /* LoginViewController.swift in Sources */,
+				844B17D81C0D575500D2946F /* ProfileViewController.swift in Sources */,
+				8401C27C1C0D1F36008370DB /* ViewController.swift in Sources */,
+				849366DA1C111E4300CB583F /* HomeViewController.swift in Sources */,
+				8401C28E1C0D1FFA008370DB /* Question.swift in Sources */,
+				8401C27A1C0D1F36008370DB /* AppDelegate.swift in Sources */,
+				849366DC1C111E4F00CB583F /* SignUpViewController.swift in Sources */,
+				8401C2901C0D2064008370DB /* Response.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8401C27D1C0D1F36008370DB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8401C27E1C0D1F36008370DB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8401C2821C0D1F36008370DB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8401C2831C0D1F36008370DB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8401C2861C0D1F36008370DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8401C2871C0D1F36008370DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8401C2891C0D1F36008370DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Drunkosophy/parse-library-1.10.0",
+				);
+				INFOPLIST_FILE = Drunkosophy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = iosdecal.Drunkosophy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8401C28A1C0D1F36008370DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Drunkosophy/parse-library-1.10.0",
+				);
+				INFOPLIST_FILE = Drunkosophy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = iosdecal.Drunkosophy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8401C2711C0D1F36008370DB /* Build configuration list for PBXProject "Drunkosophy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8401C2861C0D1F36008370DB /* Debug */,
+				8401C2871C0D1F36008370DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8401C2881C0D1F36008370DB /* Build configuration list for PBXNativeTarget "Drunkosophy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8401C2891C0D1F36008370DB /* Debug */,
+				8401C28A1C0D1F36008370DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8401C26E1C0D1F36008370DB /* Project object */;
+}
