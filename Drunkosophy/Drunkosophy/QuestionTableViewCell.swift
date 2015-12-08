@@ -8,18 +8,27 @@
 
 import Foundation
 import UIKit
+import Parse
+import Bolts
 
 class QuestionTableViewCell: UITableViewCell {
     
+    var questionId = String()
     @IBOutlet var questionTextView: UITextView!
     @IBOutlet var usernameLabel: UILabel!
     @IBOutlet var scoreLabel: UILabel!
-    @IBOutlet var upButton: UIButton!
-    
-    
-    
-    
-//    init(style: UITableViewCellStyle, reuseIdentifier: String) {
-//        super.init(style: style, reuseIdentifier:reuseIdentifier)
-//    }
+    @IBAction func upvote(sender: AnyObject) {
+        let query = PFQuery(className: "Question")
+        query.getObjectInBackgroundWithId(questionId) {
+            (question: PFObject?, error: NSError?) -> Void in
+            if error != nil {
+                print(error)
+            } else if let question = question {
+                question.incrementKey("score")
+                let score = question.objectForKey("score") as! NSNumber
+                self.scoreLabel.text = "\(score)"
+                question.saveInBackground()
+            }
+        }
+    }
 }

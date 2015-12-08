@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="pyU-Ba-o1Q">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="pyU-Ba-o1Q">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
     </dependencies>
     <scenes>
         <!--Question View Controller-->
@@ -20,8 +20,8 @@
                                 <rect key="frame" x="27" y="229" width="506" height="317"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Paf-fC-zP1">
-                                        <rect key="frame" x="0.0" y="28" width="506" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="Paf-fC-zP1" customClass="ResponseTableViewCell" customModule="Drunkosophy" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="92" width="506" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Paf-fC-zP1" id="Olh-E6-KsA">
                                             <rect key="frame" x="0.0" y="0.0" width="506" height="43.5"/>
@@ -33,52 +33,77 @@
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ms1-Al-8ss">
-                                                    <rect key="frame" x="450" y="0.0" width="45" height="21"/>
+                                                    <rect key="frame" x="332" y="22" width="84" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PAj-AM-AKc">
-                                                    <rect key="frame" x="12" y="22" width="79" height="21"/>
+                                                    <rect key="frame" x="12" y="22" width="181" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oFr-fy-19T">
+                                                    <rect key="frame" x="332" y="-4" width="30" height="30"/>
+                                                    <state key="normal" title="Up"/>
+                                                    <connections>
+                                                        <action selector="upVote:" destination="Paf-fC-zP1" eventType="touchUpInside" id="Ksw-mx-SSD"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="responseTextView" destination="UGP-1D-vyH" id="mFF-Io-bQw"/>
+                                            <outlet property="scoreLabel" destination="Ms1-Al-8ss" id="qDI-aT-QfT"/>
+                                            <outlet property="usernameLabel" destination="PAj-AM-AKc" id="71A-Q2-sJQ"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="cfu-jC-Kfz"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="HRe-Vm-2vb"/>
+                                </connections>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Question" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V2w-GH-dw3">
-                                <rect key="frame" x="38" y="28" width="69" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sec-PS-Wej">
-                                <rect key="frame" x="38" y="66" width="240" height="128"/>
+                                <rect key="frame" x="38" y="142" width="240" height="128"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ay-17-8CP">
-                                <rect key="frame" x="217" y="208" width="53" height="30"/>
+                                <rect key="frame" x="310" y="240" width="53" height="30"/>
                                 <state key="normal" title="Submit!"/>
+                                <connections>
+                                    <action selector="submit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uMx-ej-lZB"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Question" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V2w-GH-dw3">
+                                <rect key="frame" x="38" y="84" width="350" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="1yS-Ed-n6g">
-                        <barButtonItem key="rightBarButtonItem" title="My Profile" id="vfV-I3-8es"/>
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="6Ub-MK-Yny">
+                            <connections>
+                                <segue destination="fcL-MN-bYk" kind="unwind" unwindAction="unwindToHomeScreen:" id="Tnk-dI-uud"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="qTableView" destination="MXC-Uo-PDd" id="f5u-Gq-QQ6"/>
-                        <outlet property="question" destination="V2w-GH-dw3" id="MWA-hv-jXb"/>
+                        <outlet property="qTableView" destination="MXC-Uo-PDd" id="UQf-4W-6w9"/>
+                        <outlet property="questionLabel" destination="V2w-GH-dw3" id="zZ2-Ug-aIq"/>
+                        <outlet property="responseTextView" destination="sec-PS-Wej" id="gRx-9b-hvU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="fcL-MN-bYk" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="228" y="273"/>
+            <point key="canvasLocation" x="234" y="282"/>
         </scene>
         <!--Drunkosophy-->
         <scene sceneID="Ofw-ct-BbR">
@@ -106,14 +131,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oOE-pC-j0S">
-                                <rect key="frame" x="50" y="104" width="521" height="420"/>
+                                <rect key="frame" x="50" y="104" width="351" height="420"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Hqx-PJ-6Pc" customClass="QuestionTableViewCell" customModule="Drunkosophy" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="521" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="Hqx-PJ-6Pc" customClass="QuestionTableViewCell" customModule="Drunkosophy" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="351" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Hqx-PJ-6Pc" id="oo6-Fv-jhR">
-                                            <rect key="frame" x="0.0" y="0.0" width="521" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="351" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xcP-Dk-Ejf">
@@ -123,17 +148,20 @@
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Pt-NA-Lox">
-                                                    <rect key="frame" x="13" y="14" width="79" height="21"/>
+                                                    <rect key="frame" x="13" y="14" width="190" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lGx-6O-vlf">
-                                                    <rect key="frame" x="475" y="8" width="30" height="30"/>
+                                                    <rect key="frame" x="297" y="-4" width="46" height="31.5"/>
                                                     <state key="normal" title="Up"/>
+                                                    <connections>
+                                                        <action selector="upvote:" destination="Hqx-PJ-6Pc" eventType="touchUpInside" id="7XK-zz-7Wh"/>
+                                                    </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W9h-ps-AsU">
-                                                    <rect key="frame" x="460" y="-4" width="45" height="21"/>
+                                                    <rect key="frame" x="291" y="14" width="52" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -141,13 +169,17 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="questionTextView" destination="xcP-Dk-Ejf" id="yQV-0Z-R8m"/>
-                                            <outlet property="scoreLabel" destination="W9h-ps-AsU" id="mE5-ju-i6Y"/>
-                                            <outlet property="upButton" destination="lGx-6O-vlf" id="afg-mE-tB8"/>
-                                            <outlet property="usernameLabel" destination="3Pt-NA-Lox" id="Wd6-cx-MGw"/>
+                                            <outlet property="questionTextView" destination="xcP-Dk-Ejf" id="I9s-pS-XKW"/>
+                                            <outlet property="scoreLabel" destination="W9h-ps-AsU" id="1Qj-YN-cIT"/>
+                                            <outlet property="usernameLabel" destination="3Pt-NA-Lox" id="0VR-4x-lPR"/>
+                                            <segue destination="BYZ-38-t0r" kind="show" identifier="responseSegue" id="Pg1-Su-s28"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Qgv-dh-W2C" id="3OS-t0-pAv"/>
+                                    <outlet property="delegate" destination="Qgv-dh-W2C" id="Ozu-2C-r6P"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.47450980539999998" green="0.80392158030000005" blue="0.80392158030000005" alpha="1" colorSpace="calibratedRGB"/>
@@ -163,7 +195,7 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="logout" destination="fIt-cp-zN0" id="l5O-eP-rhx"/>
-                        <outlet property="tableView" destination="oOE-pC-j0S" id="oA9-UA-QKb"/>
+                        <outlet property="tableView" destination="oOE-pC-j0S" id="535-Wl-m3p"/>
                         <outlet property="userNameLabel" destination="5FR-jZ-Pyr" id="0eU-Yd-WcI"/>
                     </connections>
                 </viewController>

@@ -11,11 +11,9 @@
 		8401C27F1C0D1F36008370DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8401C27D1C0D1F36008370DB /* Main.storyboard */; };
 		8401C2811C0D1F36008370DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8401C2801C0D1F36008370DB /* Assets.xcassets */; };
 		8401C2841C0D1F36008370DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8401C2821C0D1F36008370DB /* LaunchScreen.storyboard */; };
-		840573871C14060D008AC45C /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840573861C14060D008AC45C /* QuestionViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		840573891C141066008AC45C /* CreateQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840573881C141066008AC45C /* CreateQuestionViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		8426FC481C154F480077F236 /* QuestionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8426FC471C154F480077F236 /* QuestionTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
-		8474D6231C0D5FDA00DCECDD /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8474D6211C0D5FDA00DCECDD /* Bolts.framework */; };
-		8474D6241C0D5FDA00DCECDD /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8474D6221C0D5FDA00DCECDD /* Parse.framework */; };
+		840573871C14060D008AC45C /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840573861C14060D008AC45C /* QuestionViewController.swift */; };
+		840573891C141066008AC45C /* CreateQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840573881C141066008AC45C /* CreateQuestionViewController.swift */; };
+		8426FC481C154F480077F236 /* QuestionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8426FC471C154F480077F236 /* QuestionTableViewCell.swift */; };
 		849192321C0D613C005FA831 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 849192311C0D613C005FA831 /* AudioToolbox.framework */; };
 		849192341C0D6150005FA831 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 849192331C0D6150005FA831 /* CFNetwork.framework */; };
 		849192361C0D6155005FA831 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 849192351C0D6155005FA831 /* CoreGraphics.framework */; };
@@ -28,10 +26,13 @@
 		849192441C0D6179005FA831 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 849192431C0D6179005FA831 /* libsqlite3.tbd */; };
 		849192461C0D6182005FA831 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 849192451C0D6182005FA831 /* Accounts.framework */; };
 		849192481C0D6186005FA831 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 849192471C0D6186005FA831 /* Social.framework */; };
-		849366D81C111E3A00CB583F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849366D71C111E3A00CB583F /* LoginViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		849366DA1C111E4300CB583F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849366D91C111E4300CB583F /* HomeViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		849366DC1C111E4F00CB583F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849366DB1C111E4F00CB583F /* SignUpViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		849366DE1C11304200CB583F /* Drunkosophy_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 849366DD1C11304200CB583F /* Drunkosophy_Logo.png */; settings = {ASSET_TAGS = (); }; };
+		849366D81C111E3A00CB583F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849366D71C111E3A00CB583F /* LoginViewController.swift */; };
+		849366DA1C111E4300CB583F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849366D91C111E4300CB583F /* HomeViewController.swift */; };
+		849366DC1C111E4F00CB583F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849366DB1C111E4F00CB583F /* SignUpViewController.swift */; };
+		849366DE1C11304200CB583F /* Drunkosophy_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 849366DD1C11304200CB583F /* Drunkosophy_Logo.png */; };
+		84B0C1DC1C1570A400A2539F /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B0C1DB1C1570A400A2539F /* Bolts.framework */; };
+		84B0C1DE1C1570B100A2539F /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B0C1DD1C1570B100A2539F /* Parse.framework */; };
+		84D33A381C16488D002A30D8 /* ResponseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D33A371C16488D002A30D8 /* ResponseTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,8 +45,6 @@
 		840573861C14060D008AC45C /* QuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		840573881C141066008AC45C /* CreateQuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateQuestionViewController.swift; path = ../CreateQuestionViewController.swift; sourceTree = "<group>"; };
 		8426FC471C154F480077F236 /* QuestionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionTableViewCell.swift; sourceTree = "<group>"; };
-		8474D6211C0D5FDA00DCECDD /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "Drunkosophy/parse-library-1.10.0/Bolts.framework"; sourceTree = "<group>"; };
-		8474D6221C0D5FDA00DCECDD /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "Drunkosophy/parse-library-1.10.0/Parse.framework"; sourceTree = "<group>"; };
 		849192311C0D613C005FA831 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		849192331C0D6150005FA831 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		849192351C0D6155005FA831 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -62,6 +61,9 @@
 		849366D91C111E4300CB583F /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		849366DB1C111E4F00CB583F /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		849366DD1C11304200CB583F /* Drunkosophy_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Drunkosophy_Logo.png; sourceTree = "<group>"; };
+		84B0C1DB1C1570A400A2539F /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = Drunkosophy/Bolts.framework; sourceTree = "<group>"; };
+		84B0C1DD1C1570B100A2539F /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = Drunkosophy/Parse.framework; sourceTree = "<group>"; };
+		84D33A371C16488D002A30D8 /* ResponseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84B0C1DE1C1570B100A2539F /* Parse.framework in Frameworks */,
+				84B0C1DC1C1570A400A2539F /* Bolts.framework in Frameworks */,
 				849192481C0D6186005FA831 /* Social.framework in Frameworks */,
 				849192461C0D6182005FA831 /* Accounts.framework in Frameworks */,
 				849192441C0D6179005FA831 /* libsqlite3.tbd in Frameworks */,
@@ -81,8 +85,6 @@
 				849192361C0D6155005FA831 /* CoreGraphics.framework in Frameworks */,
 				849192341C0D6150005FA831 /* CFNetwork.framework in Frameworks */,
 				849192321C0D613C005FA831 /* AudioToolbox.framework in Frameworks */,
-				8474D6231C0D5FDA00DCECDD /* Bolts.framework in Frameworks */,
-				8474D6241C0D5FDA00DCECDD /* Parse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +94,8 @@
 		8401C26D1C0D1F36008370DB = {
 			isa = PBXGroup;
 			children = (
+				84B0C1DD1C1570B100A2539F /* Parse.framework */,
+				84B0C1DB1C1570A400A2539F /* Bolts.framework */,
 				849192471C0D6186005FA831 /* Social.framework */,
 				849192451C0D6182005FA831 /* Accounts.framework */,
 				849192431C0D6179005FA831 /* libsqlite3.tbd */,
@@ -104,8 +108,6 @@
 				849192351C0D6155005FA831 /* CoreGraphics.framework */,
 				849192331C0D6150005FA831 /* CFNetwork.framework */,
 				849192311C0D613C005FA831 /* AudioToolbox.framework */,
-				8474D6211C0D5FDA00DCECDD /* Bolts.framework */,
-				8474D6221C0D5FDA00DCECDD /* Parse.framework */,
 				8401C2781C0D1F36008370DB /* Drunkosophy */,
 				8401C2771C0D1F36008370DB /* Products */,
 			);
@@ -124,12 +126,13 @@
 			children = (
 				8401C2791C0D1F36008370DB /* AppDelegate.swift */,
 				849366D71C111E3A00CB583F /* LoginViewController.swift */,
-				849366D91C111E4300CB583F /* HomeViewController.swift */,
 				849366DB1C111E4F00CB583F /* SignUpViewController.swift */,
 				8401C27D1C0D1F36008370DB /* Main.storyboard */,
+				849366D91C111E4300CB583F /* HomeViewController.swift */,
+				840573861C14060D008AC45C /* QuestionViewController.swift */,
+				84D33A371C16488D002A30D8 /* ResponseTableViewCell.swift */,
 				8426FC471C154F480077F236 /* QuestionTableViewCell.swift */,
 				840573881C141066008AC45C /* CreateQuestionViewController.swift */,
-				840573861C14060D008AC45C /* QuestionViewController.swift */,
 				8401C2801C0D1F36008370DB /* Assets.xcassets */,
 				8401C2821C0D1F36008370DB /* LaunchScreen.storyboard */,
 				8401C2851C0D1F36008370DB /* Info.plist */,
@@ -209,6 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84D33A381C16488D002A30D8 /* ResponseTableViewCell.swift in Sources */,
 				840573891C141066008AC45C /* CreateQuestionViewController.swift in Sources */,
 				849366D81C111E3A00CB583F /* LoginViewController.swift in Sources */,
 				849366DA1C111E4300CB583F /* HomeViewController.swift in Sources */,
@@ -331,6 +335,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Drunkosophy/parse-library-1.10.0",
+					"$(PROJECT_DIR)/Drunkosophy",
 				);
 				INFOPLIST_FILE = Drunkosophy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -346,6 +351,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Drunkosophy/parse-library-1.10.0",
+					"$(PROJECT_DIR)/Drunkosophy",
 				);
 				INFOPLIST_FILE = Drunkosophy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
