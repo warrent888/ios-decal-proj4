@@ -16,15 +16,16 @@ class QuestionViewController: UIViewController, UITableViewDelegate, UITableView
     @IBOutlet var questionLabel: UILabel!
     @IBOutlet var responseTextView: UITextView!
     @IBOutlet var qTableView: UITableView!
+    
 
     var questionText = String()
     var questionId = String()
-
     var feedData = [PFObject]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.loadData()
+        self.automaticallyAdjustsScrollViewInsets = false
         
     }
 
